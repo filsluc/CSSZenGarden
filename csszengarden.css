@@ -1,0 +1,133 @@
+/* body {
+    background: green;
+    background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100% );
+    background: -webkit-gradient(linear, left, top, right top, color-stop (0%, #ffffff), color-stop (66%, #ffffff), color-stop (66%, #e5ede8), color-stop (100%, #e5ede8));
+    background: -o-linear-gradient(left, #ffffff 0%, #ffffff 66%, #e5ede8 100%);
+    background: -ms-linear-gradient(left, #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+    background: linear-gradient (to right, #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+    font-size: 100%;
+}
+
+@media screen {
+    body {
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville',
+    sans-serif;
+    font-size: 70%;
+    }
+}
+
+@media screen {
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen {
+    * {-webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;    
+    }
+    
+}
+
+body {
+    display: block;
+    margin-top: 8px;
+}
+
+::marker {
+ unicode-bidi: isolate;
+ font-variant-numeric: tabular-nums;
+ white-space: pre;
+ text-transform: none; 
+} */
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(50, 80, 80);
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#css-zen-garden {
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.banner {
+    background-image: url(huntington.jpg);
+    width: 100%;
+    height: 310px;
+    padding: 0 10%;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
+    text-align: left;
+}
+
+.banner h1 {
+    display: inline-block;
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 60px 0 5px 0;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+}
+
+.banner h1:before {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: -65px 40px 0 0;
+    background: url(enso.svg);
+    background-size: 100%;
+    opacity: 0.6;
+}
+
+.banner h2 {
+    display: block;
+    margin: 0;
+    padding: 5px 0 60px 70px;
+    border-top: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: normal;
+}
+.banner h2:before {
+    content: " ";
+    padding: 50px;
+}
+
+.summary, .preamble, .explanation {
+    box-sizing: border-box;
+    float: left;
+    clear: left;
+    width: 66%;
+    padding: 1em 5% 1em 10%;
+}
+
+.main {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1em;
+    margin: 0.75em 0;
+    line-height: 2;
+}
